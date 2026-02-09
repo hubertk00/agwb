@@ -12,6 +12,9 @@ set master_clk_period [get_property -quiet -min PERIOD $master_clk]
 if {[llength $slave_clk] == 0 || [llength $master_clk] == 0} {
     return
 }
+# If PERIOD is unknown or empty - set default value
+if {$slave_clk_period eq ""}  { set slave_clk_period 1000 }
+if {$master_clk_period eq ""} { set master_clk_period 1001 }
 
 if {$slave_clk != $master_clk} {
    set_false_path -to [get_cells resp_s0*_reg*]
