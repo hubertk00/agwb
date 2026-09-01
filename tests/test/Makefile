@@ -1,6 +1,6 @@
 STD=standard
 #STD=synopsys
-VSTD=93c
+VSTD=08
 ENTITY=wb_test_top_tb
 # --unbuffered option must be added in the new GHDL
 RUN_OPTIONS= --unbuffered --stop-time=5000ns --wave=${ENTITY}.ghw 
@@ -57,7 +57,7 @@ ${ENTITY}: ${OBJECTS_GC} ${OBJECTS_AGWB} ${OBJECTS}
 	ghdl -e -g --mb-comments  --std=${VSTD} -fexplicit --ieee=${STD} ${ENTITY}
 ${ENTITY}.ghw: ${ENTITY}
 #	./${ENTITY} --wave=${ENTITY}.ghw  ${RUN_OPTIONS} --stop-time=50000ns 2>&1 > res.txt
-	./${ENTITY} ${RUN_OPTIONS} 
+	ghdl -r --std=${VSTD} ${ENTITY} ${RUN_OPTIONS} 
 #> res.txt  2>&1 
 clean:
 	rm -f comp/* *.o *.vcd *.ghw *.cf events* ${ENTITY}
