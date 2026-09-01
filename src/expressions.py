@@ -24,7 +24,7 @@ class Visitor(ast.NodeVisitor):
             raise ValueError(node)
         return super().visit(node)
 
-    whitelist = (ast.Module, ast.Expr, ast.Load, ast.Expression, ast.Add, ast.Sub, ast.UnaryOp, ast.Num, ast.BinOp,
+    whitelist = (ast.Module, ast.Expr, ast.Load, ast.Expression, ast.Add, ast.Sub, ast.UnaryOp, ast.Constant, ast.BinOp,
             ast.Mult, ast.Div, ast.Pow, ast.BitOr, ast.BitAnd, ast.BitXor, ast.USub, ast.UAdd, ast.FloorDiv, ast.Mod,
             ast.LShift, ast.RShift, ast.Invert, ast.Call, ast.Name)
 
