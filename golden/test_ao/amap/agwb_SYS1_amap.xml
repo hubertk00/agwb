@@ -1,0 +1,16 @@
+<module id="SYS1" id_hash="0x5bd964c2" ver_hash="0xad9541a4" system_hash="0xb6e6d1d1" addr_bits="4">
+  <register id="ID" address="0x00000000" permission="r"/>
+  <register id="VER" address="0x00000001" permission="r"/>
+  <register id="CTRL" address="0x00000002" permission="rw">
+    <field id="START" mask="0x00000001"/>
+    <field id="SPEED" mask="0x0000001e"/>
+    <field id="STOP" mask="0x00000020"/>
+  </register>
+  <register id="Test1" address="0x00000003" nelems="1" elemoffs="1"  permission="rw">
+    <field id="FIELD1" mask="0x00000001"/>
+    <field id="FIELD2" mask="0x0000001e"/>
+    <field id="FIELD3" mask="0x00000020"/>
+  </register>
+  <register id="STATUS" address="0x00000004" permission="r"/>
+  <register id="ENABLEs" address="0x00000005" nelems="10" elemoffs="1"  permission="rw"/>
+</module>

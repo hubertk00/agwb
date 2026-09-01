@@ -1,0 +1,11 @@
+<module id="SYS1" id_hash="0x5bd964c2" ver_hash="0x038dc299" system_hash="0xc99e6bdc" addr_bits="4">
+  <register id="ID" address="0x00000000" permission="r"/>
+  <register id="VER" address="0x00000001" permission="r"/>
+  <register id="X2" address="0x00000003" nelems="1" elemoffs="1"  permission="rw">
+    <field id="B1" mask="0x00000001"/>
+    <field id="B2" mask="0x00000002"/>
+    <field id="B3" mask="0x00000004"/>
+  </register>
+  <register id="ENABLEs" address="0x00000004" nelems="10" elemoffs="1"  permission="rw"/>
+  <register id="STATUS" address="0x0000000e" permission="r"/>
+</module>

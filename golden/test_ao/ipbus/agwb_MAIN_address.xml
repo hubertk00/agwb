@@ -1,0 +1,55 @@
+<node id="MAIN">
+  <node id="EXTHUGE" address="0x00010000" module="file://HTEST_address.xml"/>
+  <node id="EXTERN[0]" address="0x0000f000" module="file://EXTTEST_address.xml"/>
+  <node id="EXTERN[1]" address="0x0000f400" module="file://EXTTEST_address.xml"/>
+  <node id="EXTERN[2]" address="0x0000f800" module="file://EXTTEST_address.xml"/>
+  <node id="EXTERN[3]" address="0x0000fc00" module="file://EXTTEST_address.xml"/>
+  <node id="LINKS[0]" address="0x0000ee00" module="file://agwb_SYS1_address.xml"/>
+  <node id="LINKS[1]" address="0x0000ee10" module="file://agwb_SYS1_address.xml"/>
+  <node id="LINKS[2]" address="0x0000ee20" module="file://agwb_SYS1_address.xml"/>
+  <node id="LINKS[3]" address="0x0000ee30" module="file://agwb_SYS1_address.xml"/>
+  <node id="LINKS[4]" address="0x0000ee40" module="file://agwb_SYS1_address.xml"/>
+  <node id="LINKS[5]" address="0x0000ee50" module="file://agwb_SYS1_address.xml"/>
+  <node id="LINKS[6]" address="0x0000ee60" module="file://agwb_SYS1_address.xml"/>
+  <node id="LINKS[7]" address="0x0000ee70" module="file://agwb_SYS1_address.xml"/>
+  <node id="LINKS[8]" address="0x0000ee80" module="file://agwb_SYS1_address.xml"/>
+  <node id="LINKS[9]" address="0x0000ee90" module="file://agwb_SYS1_address.xml"/>
+  <node id="LINKS[10]" address="0x0000eea0" module="file://agwb_SYS1_address.xml"/>
+  <node id="LINKS[11]" address="0x0000eeb0" module="file://agwb_SYS1_address.xml"/>
+  <node id="LINKS[12]" address="0x0000eec0" module="file://agwb_SYS1_address.xml"/>
+  <node id="LINKS[13]" address="0x0000eed0" module="file://agwb_SYS1_address.xml"/>
+  <node id="LINKS[14]" address="0x0000eee0" module="file://agwb_SYS1_address.xml"/>
+  <node id="LINKS[15]" address="0x0000eef0" module="file://agwb_SYS1_address.xml"/>
+  <node id="LINKS[16]" address="0x0000ef00" module="file://agwb_SYS1_address.xml"/>
+  <node id="LINKS[17]" address="0x0000ef10" module="file://agwb_SYS1_address.xml"/>
+  <node id="LINKS[18]" address="0x0000ef20" module="file://agwb_SYS1_address.xml"/>
+  <node id="LINKS[19]" address="0x0000ef30" module="file://agwb_SYS1_address.xml"/>
+  <node id="LINKS[20]" address="0x0000ef40" module="file://agwb_SYS1_address.xml"/>
+  <node id="LINKS[21]" address="0x0000ef50" module="file://agwb_SYS1_address.xml"/>
+  <node id="LINKS[22]" address="0x0000ef60" module="file://agwb_SYS1_address.xml"/>
+  <node id="LINKS[23]" address="0x0000ef70" module="file://agwb_SYS1_address.xml"/>
+  <node id="LINKS[24]" address="0x0000ef80" module="file://agwb_SYS1_address.xml"/>
+  <node id="LINKS[25]" address="0x0000ef90" module="file://agwb_SYS1_address.xml"/>
+  <node id="LINKS[26]" address="0x0000efa0" module="file://agwb_SYS1_address.xml"/>
+  <node id="LINKS[27]" address="0x0000efb0" module="file://agwb_SYS1_address.xml"/>
+  <node id="LINKS[28]" address="0x0000efc0" module="file://agwb_SYS1_address.xml"/>
+  <node id="LINKS[29]" address="0x0000efd0" module="file://agwb_SYS1_address.xml"/>
+  <node id="LINKS[30]" address="0x0000efe0" module="file://agwb_SYS1_address.xml"/>
+  <node id="ID" address="0x00000400" permission="r"/>
+  <node id="VER" address="0x00000401" permission="r"/>
+  <node id="CR1" address="0x00000402" permission="rw"/>
+  <node id="CTRL" address="0x00000403" permission="rw">
+    <node id="CLK_ENABLE" mask="0x0000001f"/>
+    <node id="CLK_FREQ" mask="0x000001e0"/>
+    <node id="PLL_RESET" mask="0x00000200"/>
+  </node>
+  <node id="CR2" address="0x00000404" permission="rw"/>
+  <node id="TEST_OUT[0]" address="0x00000405" permission="rw" mask="0x0001ffff"/>
+  <node id="TEST_OUT[1]" address="0x00000406" permission="rw" mask="0x0001ffff"/>
+  <node id="TEST_OUT[2]" address="0x00000407" permission="rw" mask="0x0001ffff"/>
+  <node id="TEST_IN[0]" address="0x00000408" permission="r" mask="0x0000ffff"/>
+  <node id="TEST_IN[1]" address="0x00000409" permission="r" mask="0x0000ffff"/>
+  <node id="TEST_IN[2]" address="0x0000040a" permission="r" mask="0x0000ffff"/>
+  <node id="TEST_IN[3]" address="0x0000040b" permission="r" mask="0x0000ffff"/>
+  <node id="TEST_IN[4]" address="0x0000040c" permission="r" mask="0x0000ffff"/>
+</node>

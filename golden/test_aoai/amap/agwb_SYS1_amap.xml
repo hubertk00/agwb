@@ -1,0 +1,12 @@
+<module id="SYS1" id_hash="0x5bd964c2" ver_hash="0x1f601bb6" system_hash="0x7d821872" addr_bits="5">
+  <register id="ID" address="0x00000000" permission="r"/>
+  <register id="VER" address="0x00000001" permission="r"/>
+  <register id="CTRL" address="0x00000002" permission="rw">
+    <field id="START" mask="0x00000001"/>
+    <field id="SPEED" mask="0x0000001e"/>
+    <field id="STOP" mask="0x00000020"/>
+  </register>
+  <register id="STATUS" address="0x00000003" permission="r"/>
+  <register id="RREG" address="0x00000004" nelems="3" elemoffs="1"  permission="r"/>
+  <register id="ENABLEs" address="0x00000007" nelems="10" elemoffs="1"  permission="rw"/>
+</module>

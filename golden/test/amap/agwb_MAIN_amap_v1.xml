@@ -1,0 +1,17 @@
+<module id="MAIN" is_top="1" id_hash="0x89bd20d0" ver_hash="0xdf01e274" system_hash="0xc99e6bdc" addr_bits="17">
+  <block id="EXTERN" address="0x0000f000"  nelems="4" elemoffs="0x00000400" module="file://EXTTEST_amap_v1.xml"/>
+  <block id="LINKS" address="0x0000ee00"  nelems="2" elemoffs="0x00000010" module="file://agwb_SYS1_amap_v1.xml"/>
+  <register id="ID" address="0x00002000" permission="r"/>
+  <register id="VER" address="0x00002001" permission="r"/>
+  <register id="TEST_RW" address="0x00002004" permission="rw"/>
+  <register id="TEST_WO" address="0x00002005" permission="rw"/>
+  <register id="TEST_RO" address="0x00002006" permission="rw"/>
+  <register id="TEST_TOUT" address="0x00002007" permission="rw"/>
+  <register id="CTRL" address="0x00002008" permission="rw">
+    <field id="CLK_ENABLE" mask="0x0000001f"/>
+    <field id="CLK_FREQ" mask="0x000001e0"/>
+    <field id="PLL_RESET" mask="0x00000200"/>
+  </register>
+  <register id="TEST_OUT" address="0x00002009" nelems="3" elemoffs="1"  permission="rw" mask="0x0001ffff"/>
+  <register id="TEST_IN" address="0x0000200c" nelems="4" elemoffs="1"  permission="r" mask="0x0000ffff"/>
+</module>

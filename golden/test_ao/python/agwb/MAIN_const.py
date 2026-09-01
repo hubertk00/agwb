@@ -1,0 +1,3 @@
+NEXTERNS = 4 # 4
+NSEL_BITS = 5 # 5
+NSEL_MAX = 31 # (1 << NSEL_BITS)-1

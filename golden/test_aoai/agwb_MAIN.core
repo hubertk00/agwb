@@ -1,0 +1,17 @@
+CAPI=2:
+filesets:
+  rtl:
+    file_type: vhdlSource-93
+    files:
+    - ./vhdl/agwb_pkg.vhd
+    - ./vhdl/SYS1_pkg.vhd
+    - ./vhdl/SYS1.vhd
+    - ./vhdl/MAIN_pkg.vhd
+    - ./vhdl/MAIN.vhd
+    - ./vhdl/MAIN_const_pkg.vhd
+    logical_name: agwb
+name: ''
+targets:
+  default:
+    filesets:
+    - rtl
