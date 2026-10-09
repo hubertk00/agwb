@@ -12,16 +12,19 @@ tests/*/python_raw/agwb/
 tests/*/python_ipbus/agwb/
 tests/*/agwb_*.core
 tests/*/agwb_*.eprj
+tests/*/build
 
 hybrid/gen/
 hybrid/agwb_*.core
 
 tests/*/general-cores/
+tests/*/hdl-modules/
 
 *.o
 *.cf
 *.ghw
 *.vcd
+*.toml
 work-obj*.cf
 agwb-obj*.cf
 general_cores-obj*.cf
