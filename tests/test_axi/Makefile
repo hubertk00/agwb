@@ -13,7 +13,7 @@ SOURCES_HM = \
  axi_lite:${HM}/axi_lite/src/axi_lite_pkg.vhd \
  axi_lite:${HM}/axi_lite/src/axi_lite_mux.vhd
 
-SOURCES = hdl/dummy_axil_slave.vhd
+SOURCES = hdl/dummy_axil_slave.vhd tb/tb_mux.vhd
 
 .PHONY: all deps clean
 
